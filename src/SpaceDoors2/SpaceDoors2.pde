@@ -1,4 +1,4 @@
-
+ 
 Ship spacecraft;
 PImage rock;
 PImage missile;
@@ -139,8 +139,8 @@ void keyPressed() {
     walls.add(new Wall(150, 50, 50, 50, true));
     
     for (int i=0; i<5; i++) {
-      walls.add(new Wall(20+(i+1)*50, 450, 25, 25, true));
-      walls.add(new Wall(45+(i+1)*50, 500, 25, 25, true));
+      walls.add(new MovingWall(20+(i+1)*50, 450, 25, 25, true));
+      walls.add(new MovingWall(45+(i+1)*50, 500, 25, 25, true));
     }
   }
   else if (key == 'c') {

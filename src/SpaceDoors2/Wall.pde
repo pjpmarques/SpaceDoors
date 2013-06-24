@@ -26,6 +26,7 @@ class Wall extends SpaceObject
       if (!basicColor) {
         noFill();
         image(rock, x, y, this.width, this.height);
+        //ellipse(x, y, this.width, this.height);
       }      
       rect(x, y, this.width, this.height);
     }
